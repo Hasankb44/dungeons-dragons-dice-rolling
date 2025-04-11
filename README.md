@@ -6,18 +6,18 @@
 
 1. **spring-boot-starter**
    ```markdown
-   ```xml
+   ```
    <dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-web</artifactId>
+	<groupId>org.springframework.boot</groupId>
+	<artifactId>spring-boot-starter-web</artifactId>
    <dependency>
 
 2. **spring-boot-starter-test**
    ```markdown
-   ```xml
+   ```
    <dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-test</artifactId>
+	<groupId>org.springframework.boot</groupId>
+	<artifactId>spring-boot-starter-test</artifactId>
    <dependency>
    
 **
