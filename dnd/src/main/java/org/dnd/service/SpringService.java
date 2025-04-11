@@ -23,7 +23,7 @@ public class SpringService implements SSI {
     }
 
     public Integer getResult(String body) {
-        String half = body.split("\"")[3]; // split by quote: { "result": "42" } => 0:{, 1:result, 2::, 3:42
+        String half = body.split("\"")[3];
         return Integer.valueOf(half);
     }
 
@@ -35,8 +35,8 @@ public class SpringService implements SSI {
         }
 
         ResponseEntity<HttpEntity<String>> rd = rollDice(times, face);
-        String body = rd.getBody().getBody(); // Get JSON string like {"result": "42"}
-        Integer n = getResult(body); // Parse the number
+        String body = rd.getBody().getBody(); 
+        Integer n = getResult(body); 
 
         if (op == SUBTRACT) {
             n -= val;
@@ -57,7 +57,7 @@ public class SpringService implements SSI {
         Random random = new Random();
         Integer sum = 0;
         for (int i = 0; i < times; i++) {
-            sum += random.nextInt(face) + 1; // random from 1 to face
+            sum += random.nextInt(face) + 1; 
         }
 
         HttpEntity<String> entity = rollDiceBodyBuilder(sum);
