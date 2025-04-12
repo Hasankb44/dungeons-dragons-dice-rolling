@@ -22,9 +22,8 @@ public class SpringService implements SSI {
         return new HttpEntity<>(json);
     }
 
-    public Integer getResult(String body) {
-        String half = body.split("\"")[3];
-        return Integer.valueOf(half);
+    public Integer getResult(String body) 
+        return Integer.valueOf(body);
     }
 
     @Override
